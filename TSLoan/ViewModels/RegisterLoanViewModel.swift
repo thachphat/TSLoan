@@ -6,7 +6,7 @@
 //  Copyright © 2018 Phat. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class RegisterLoanViewModel: NSObject {
 

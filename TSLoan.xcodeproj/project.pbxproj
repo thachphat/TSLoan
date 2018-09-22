@@ -11,14 +11,28 @@
 		665109D82155F252000687AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665109D62155F252000687AC /* Main.storyboard */; };
 		665109DA2155F253000687AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665109D92155F253000687AC /* Assets.xcassets */; };
 		665109DD2155F253000687AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665109DB2155F253000687AC /* LaunchScreen.storyboard */; };
-		665109E82155F253000687AC /* TSLoanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665109E72155F253000687AC /* TSLoanTests.swift */; };
-		665109F32155F253000687AC /* TSLoanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665109F22155F253000687AC /* TSLoanUITests.swift */; };
-		66510A032155F73D000687AC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66510A022155F73D000687AC /* Alamofire.framework */; };
-		66510A052155F747000687AC /* DropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66510A042155F747000687AC /* DropDown.framework */; };
 		66510A112155F91F000687AC /* RegisterLoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A0F2155F91F000687AC /* RegisterLoanViewController.swift */; };
 		66510A122155F91F000687AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A102155F91F000687AC /* HomeViewController.swift */; };
 		66510A152155F935000687AC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A142155F935000687AC /* HomeViewModel.swift */; };
 		66510A172155F93D000687AC /* RegisterLoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A162155F93D000687AC /* RegisterLoanViewModel.swift */; };
+		66510A1D21560082000687AC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A1C21560082000687AC /* APIService.swift */; };
+		66510A202156013B000687AC /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A1F2156013B000687AC /* Loan.swift */; };
+		66510A23215611F5000687AC /* LoanSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A22215611F5000687AC /* LoanSpec.swift */; };
+		66510A282156477D000687AC /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A272156477D000687AC /* Offer.swift */; };
+		66510A2A2156478B000687AC /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A292156478B000687AC /* Bank.swift */; };
+		66510A2C215648BD000687AC /* ProvinceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A2B215648BD000687AC /* ProvinceList.swift */; };
+		66510A302156DC9D000687AC /* provinces.json in Resources */ = {isa = PBXBuildFile; fileRef = 66510A2D2156DC9D000687AC /* provinces.json */; };
+		66510A312156DC9D000687AC /* offer.json in Resources */ = {isa = PBXBuildFile; fileRef = 66510A2E2156DC9D000687AC /* offer.json */; };
+		66510A322156DC9D000687AC /* loans.json in Resources */ = {isa = PBXBuildFile; fileRef = 66510A2F2156DC9D000687AC /* loans.json */; };
+		66510A352156DDD9000687AC /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A342156DDD9000687AC /* JSONUtils.swift */; };
+		66510A372156E0D5000687AC /* OfferSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A362156E0D5000687AC /* OfferSpec.swift */; };
+		66510A392156E0EA000687AC /* BankSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A382156E0EA000687AC /* BankSpec.swift */; };
+		66510A3B2156E0F6000687AC /* ProvinceListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A3A2156E0F6000687AC /* ProvinceListSpec.swift */; };
+		66510A3E2156E2CC000687AC /* JSONUtilsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A3D2156E2CC000687AC /* JSONUtilsSpec.swift */; };
+		66510A402156E37F000687AC /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 66510A3F2156E37F000687AC /* empty.json */; };
+		66510A432156E715000687AC /* APIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A422156E715000687AC /* APIServiceSpec.swift */; };
+		6E99CD6FD6938C4B71AFC9E9 /* Pods_TSLoan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEFC00B09FA69DCA3721D98 /* Pods_TSLoan.framework */; };
+		CD68AB557AA3CCF06E966884 /* Pods_TSLoanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4653DACF4983121D50D438E8 /* Pods_TSLoanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,16 +43,13 @@
 			remoteGlobalIDString = 665109CE2155F252000687AC;
 			remoteInfo = TSLoan;
 		};
-		665109EF2155F253000687AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 665109C72155F252000687AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 665109CE2155F252000687AC;
-			remoteInfo = TSLoan;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06909DBDFED2A8E5355445E0 /* Pods_TSLoanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSLoanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA6CFE8E5AC73E35F1AB7DD /* Pods-TSLoanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSLoanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSLoanTests/Pods-TSLoanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4653DACF4983121D50D438E8 /* Pods_TSLoanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSLoanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		514A13177B3A605F5AD2784F /* Pods-TSLoanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSLoanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSLoanTests/Pods-TSLoanTests.release.xcconfig"; sourceTree = "<group>"; };
 		665109CF2155F252000687AC /* TSLoan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSLoan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665109D22155F252000687AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665109D72155F252000687AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,20 +57,32 @@
 		665109DC2155F253000687AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		665109DE2155F253000687AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		665109E32155F253000687AC /* TSLoanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSLoanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		665109E72155F253000687AC /* TSLoanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLoanTests.swift; sourceTree = "<group>"; };
 		665109E92155F253000687AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		665109EE2155F253000687AC /* TSLoanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSLoanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		665109F22155F253000687AC /* TSLoanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLoanUITests.swift; sourceTree = "<group>"; };
-		665109F42155F253000687AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66510A022155F73D000687AC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		66510A042155F747000687AC /* DropDown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropDown.framework; path = Carthage/Build/iOS/DropDown.framework; sourceTree = SOURCE_ROOT; };
-		66510A062155F74D000687AC /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = Carthage/Build/iOS/KIF.framework; sourceTree = SOURCE_ROOT; };
-		66510A082155F75A000687AC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
-		66510A0A2155F75F000687AC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
 		66510A0F2155F91F000687AC /* RegisterLoanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterLoanViewController.swift; sourceTree = "<group>"; };
 		66510A102155F91F000687AC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		66510A142155F935000687AC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		66510A162155F93D000687AC /* RegisterLoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLoanViewModel.swift; sourceTree = "<group>"; };
+		66510A1C21560082000687AC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		66510A1F2156013B000687AC /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		66510A22215611F5000687AC /* LoanSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSpec.swift; sourceTree = "<group>"; };
+		66510A272156477D000687AC /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		66510A292156478B000687AC /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		66510A2B215648BD000687AC /* ProvinceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceList.swift; sourceTree = "<group>"; };
+		66510A2D2156DC9D000687AC /* provinces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = provinces.json; sourceTree = "<group>"; };
+		66510A2E2156DC9D000687AC /* offer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = offer.json; sourceTree = "<group>"; };
+		66510A2F2156DC9D000687AC /* loans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loans.json; sourceTree = "<group>"; };
+		66510A342156DDD9000687AC /* JSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
+		66510A362156E0D5000687AC /* OfferSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSpec.swift; sourceTree = "<group>"; };
+		66510A382156E0EA000687AC /* BankSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankSpec.swift; sourceTree = "<group>"; };
+		66510A3A2156E0F6000687AC /* ProvinceListSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceListSpec.swift; sourceTree = "<group>"; };
+		66510A3D2156E2CC000687AC /* JSONUtilsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtilsSpec.swift; sourceTree = "<group>"; };
+		66510A3F2156E37F000687AC /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		66510A422156E715000687AC /* APIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceSpec.swift; sourceTree = "<group>"; };
+		7BEFC00B09FA69DCA3721D98 /* Pods_TSLoan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSLoan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		930C1FBCD55DC9770FC8DAA3 /* Pods-TSLoan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSLoan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSLoan/Pods-TSLoan.debug.xcconfig"; sourceTree = "<group>"; };
+		BC5FEAFD8B089915B9FB2F52 /* Pods-TSLoanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSLoanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSLoanUITests/Pods-TSLoanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFC148D7A0F3410D6040C767 /* Pods-TSLoan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSLoan.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSLoan/Pods-TSLoan.release.xcconfig"; sourceTree = "<group>"; };
+		E18E5E84ED0B8FF5B23899A1 /* Pods-TSLoanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSLoanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSLoanUITests/Pods-TSLoanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66510A032155F73D000687AC /* Alamofire.framework in Frameworks */,
-				66510A052155F747000687AC /* DropDown.framework in Frameworks */,
+				6E99CD6FD6938C4B71AFC9E9 /* Pods_TSLoan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,26 +98,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		665109EB2155F253000687AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CD68AB557AA3CCF06E966884 /* Pods_TSLoanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08AC64DC39E6DD7DB41ECE50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BEFC00B09FA69DCA3721D98 /* Pods_TSLoan.framework */,
+				4653DACF4983121D50D438E8 /* Pods_TSLoanTests.framework */,
+				06909DBDFED2A8E5355445E0 /* Pods_TSLoanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31E824BD8887F18424AFB0F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				930C1FBCD55DC9770FC8DAA3 /* Pods-TSLoan.debug.xcconfig */,
+				BFC148D7A0F3410D6040C767 /* Pods-TSLoan.release.xcconfig */,
+				1FA6CFE8E5AC73E35F1AB7DD /* Pods-TSLoanTests.debug.xcconfig */,
+				514A13177B3A605F5AD2784F /* Pods-TSLoanTests.release.xcconfig */,
+				E18E5E84ED0B8FF5B23899A1 /* Pods-TSLoanUITests.debug.xcconfig */,
+				BC5FEAFD8B089915B9FB2F52 /* Pods-TSLoanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		665109C62155F252000687AC = {
 			isa = PBXGroup;
 			children = (
 				665109D12155F252000687AC /* TSLoan */,
 				665109E62155F253000687AC /* TSLoanTests */,
-				665109F12155F253000687AC /* TSLoanUITests */,
 				665109D02155F252000687AC /* Products */,
+				31E824BD8887F18424AFB0F8 /* Pods */,
+				08AC64DC39E6DD7DB41ECE50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +144,6 @@
 			children = (
 				665109CF2155F252000687AC /* TSLoan.app */,
 				665109E32155F253000687AC /* TSLoanTests.xctest */,
-				665109EE2155F253000687AC /* TSLoanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,14 +151,17 @@
 		665109D12155F252000687AC /* TSLoan */ = {
 			isa = PBXGroup;
 			children = (
+				66510A332156DDD0000687AC /* Utils */,
+				66510A1E2156012B000687AC /* Models */,
 				66510A0E2155F8FD000687AC /* ViewControllers */,
 				66510A132155F927000687AC /* ViewModels */,
+				66510A1B2156005D000687AC /* Services */,
+				66510A1A2155FF6C000687AC /* MockAPI */,
 				665109D22155F252000687AC /* AppDelegate.swift */,
 				665109D62155F252000687AC /* Main.storyboard */,
 				665109D92155F253000687AC /* Assets.xcassets */,
 				665109DB2155F253000687AC /* LaunchScreen.storyboard */,
 				665109DE2155F253000687AC /* Info.plist */,
-				66510A012155F70F000687AC /* Frameworks */,
 			);
 			path = TSLoan;
 			sourceTree = "<group>";
@@ -127,31 +169,12 @@
 		665109E62155F253000687AC /* TSLoanTests */ = {
 			isa = PBXGroup;
 			children = (
-				665109E72155F253000687AC /* TSLoanTests.swift */,
+				66510A3C2156E2C3000687AC /* UtilsTest */,
+				66510A21215611E4000687AC /* ModelsTests */,
+				66510A412156E704000687AC /* ServicesTest */,
 				665109E92155F253000687AC /* Info.plist */,
 			);
 			path = TSLoanTests;
-			sourceTree = "<group>";
-		};
-		665109F12155F253000687AC /* TSLoanUITests */ = {
-			isa = PBXGroup;
-			children = (
-				665109F22155F253000687AC /* TSLoanUITests.swift */,
-				665109F42155F253000687AC /* Info.plist */,
-			);
-			path = TSLoanUITests;
-			sourceTree = "<group>";
-		};
-		66510A012155F70F000687AC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				66510A022155F73D000687AC /* Alamofire.framework */,
-				66510A042155F747000687AC /* DropDown.framework */,
-				66510A062155F74D000687AC /* KIF.framework */,
-				66510A082155F75A000687AC /* Nimble.framework */,
-				66510A0A2155F75F000687AC /* Quick.framework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		66510A0E2155F8FD000687AC /* ViewControllers */ = {
@@ -172,6 +195,71 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		66510A1A2155FF6C000687AC /* MockAPI */ = {
+			isa = PBXGroup;
+			children = (
+				66510A2F2156DC9D000687AC /* loans.json */,
+				66510A2E2156DC9D000687AC /* offer.json */,
+				66510A2D2156DC9D000687AC /* provinces.json */,
+				66510A3F2156E37F000687AC /* empty.json */,
+			);
+			path = MockAPI;
+			sourceTree = "<group>";
+		};
+		66510A1B2156005D000687AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66510A1C21560082000687AC /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		66510A1E2156012B000687AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66510A1F2156013B000687AC /* Loan.swift */,
+				66510A272156477D000687AC /* Offer.swift */,
+				66510A292156478B000687AC /* Bank.swift */,
+				66510A2B215648BD000687AC /* ProvinceList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66510A21215611E4000687AC /* ModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				66510A22215611F5000687AC /* LoanSpec.swift */,
+				66510A362156E0D5000687AC /* OfferSpec.swift */,
+				66510A382156E0EA000687AC /* BankSpec.swift */,
+				66510A3A2156E0F6000687AC /* ProvinceListSpec.swift */,
+			);
+			path = ModelsTests;
+			sourceTree = "<group>";
+		};
+		66510A332156DDD0000687AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				66510A342156DDD9000687AC /* JSONUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		66510A3C2156E2C3000687AC /* UtilsTest */ = {
+			isa = PBXGroup;
+			children = (
+				66510A3D2156E2CC000687AC /* JSONUtilsSpec.swift */,
+			);
+			path = UtilsTest;
+			sourceTree = "<group>";
+		};
+		66510A412156E704000687AC /* ServicesTest */ = {
+			isa = PBXGroup;
+			children = (
+				66510A422156E715000687AC /* APIServiceSpec.swift */,
+			);
+			path = ServicesTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,10 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665109F72155F253000687AC /* Build configuration list for PBXNativeTarget "TSLoan" */;
 			buildPhases = (
+				95CAA5E8E4C6F87B6802C121 /* [CP] Check Pods Manifest.lock */,
 				665109CB2155F252000687AC /* Sources */,
 				665109CC2155F252000687AC /* Frameworks */,
 				665109CD2155F252000687AC /* Resources */,
-				66510A002155F6D6000687AC /* Run Script (Carthage) */,
+				0E0F04F5C078F4F3AF159E4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665109FA2155F253000687AC /* Build configuration list for PBXNativeTarget "TSLoanTests" */;
 			buildPhases = (
+				5FDBD1F7085DCCCB4C29F014 /* [CP] Check Pods Manifest.lock */,
 				665109DF2155F253000687AC /* Sources */,
 				665109E02155F253000687AC /* Frameworks */,
 				665109E12155F253000687AC /* Resources */,
+				E20D26F1189D9074E922E822 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,24 +301,6 @@
 			productName = TSLoanTests;
 			productReference = 665109E32155F253000687AC /* TSLoanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		665109ED2155F253000687AC /* TSLoanUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 665109FD2155F253000687AC /* Build configuration list for PBXNativeTarget "TSLoanUITests" */;
-			buildPhases = (
-				665109EA2155F253000687AC /* Sources */,
-				665109EB2155F253000687AC /* Frameworks */,
-				665109EC2155F253000687AC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				665109F02155F253000687AC /* PBXTargetDependency */,
-			);
-			name = TSLoanUITests;
-			productName = TSLoanUITests;
-			productReference = 665109EE2155F253000687AC /* TSLoanUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -243,10 +316,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					665109E22155F253000687AC = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 665109CE2155F252000687AC;
-					};
-					665109ED2155F253000687AC = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 665109CE2155F252000687AC;
 					};
@@ -267,7 +336,6 @@
 			targets = (
 				665109CE2155F252000687AC /* TSLoan */,
 				665109E22155F253000687AC /* TSLoanTests */,
-				665109ED2155F253000687AC /* TSLoanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,9 +345,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66510A402156E37F000687AC /* empty.json in Resources */,
 				665109DD2155F253000687AC /* LaunchScreen.storyboard in Resources */,
 				665109DA2155F253000687AC /* Assets.xcassets in Resources */,
 				665109D82155F252000687AC /* Main.storyboard in Resources */,
+				66510A302156DC9D000687AC /* provinces.json in Resources */,
+				66510A312156DC9D000687AC /* offer.json in Resources */,
+				66510A322156DC9D000687AC /* loans.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,17 +362,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		665109EC2155F253000687AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		66510A002155F6D6000687AC /* Run Script (Carthage) */ = {
+		0E0F04F5C078F4F3AF159E4D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,19 +373,105 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/DropDown.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-TSLoan/Pods-TSLoan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
-			name = "Run Script (Carthage)";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSLoan/Pods-TSLoan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FDBD1F7085DCCCB4C29F014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSLoanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95CAA5E8E4C6F87B6802C121 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSLoan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E20D26F1189D9074E922E822 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TSLoanTests/Pods-TSLoanTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSLoanTests/Pods-TSLoanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -329,10 +480,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66510A282156477D000687AC /* Offer.swift in Sources */,
 				66510A112155F91F000687AC /* RegisterLoanViewController.swift in Sources */,
+				66510A352156DDD9000687AC /* JSONUtils.swift in Sources */,
 				66510A172155F93D000687AC /* RegisterLoanViewModel.swift in Sources */,
 				665109D32155F252000687AC /* AppDelegate.swift in Sources */,
+				66510A202156013B000687AC /* Loan.swift in Sources */,
+				66510A2C215648BD000687AC /* ProvinceList.swift in Sources */,
 				66510A122155F91F000687AC /* HomeViewController.swift in Sources */,
+				66510A2A2156478B000687AC /* Bank.swift in Sources */,
+				66510A1D21560082000687AC /* APIService.swift in Sources */,
 				66510A152155F935000687AC /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,15 +498,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				665109E82155F253000687AC /* TSLoanTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		665109EA2155F253000687AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				665109F32155F253000687AC /* TSLoanUITests.swift in Sources */,
+				66510A392156E0EA000687AC /* BankSpec.swift in Sources */,
+				66510A432156E715000687AC /* APIServiceSpec.swift in Sources */,
+				66510A3B2156E0F6000687AC /* ProvinceListSpec.swift in Sources */,
+				66510A372156E0D5000687AC /* OfferSpec.swift in Sources */,
+				66510A3E2156E2CC000687AC /* JSONUtilsSpec.swift in Sources */,
+				66510A23215611F5000687AC /* LoanSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,11 +514,6 @@
 			isa = PBXTargetDependency;
 			target = 665109CE2155F252000687AC /* TSLoan */;
 			targetProxy = 665109E42155F253000687AC /* PBXContainerItemProxy */;
-		};
-		665109F02155F253000687AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 665109CE2155F252000687AC /* TSLoan */;
-			targetProxy = 665109EF2155F253000687AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -506,14 +655,11 @@
 		};
 		665109F82155F253000687AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930C1FBCD55DC9770FC8DAA3 /* Pods-TSLoan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V38K88SBB6;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = TSLoan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -529,14 +675,11 @@
 		};
 		665109F92155F253000687AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFC148D7A0F3410D6040C767 /* Pods-TSLoan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V38K88SBB6;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = TSLoan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -552,11 +695,15 @@
 		};
 		665109FB2155F253000687AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA6CFE8E5AC73E35F1AB7DD /* Pods-TSLoanTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V38K88SBB6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TSLoanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,11 +720,15 @@
 		};
 		665109FC2155F253000687AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 514A13177B3A605F5AD2784F /* Pods-TSLoanTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V38K88SBB6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TSLoanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,46 +740,6 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSLoan.app/TSLoan";
-			};
-			name = Release;
-		};
-		665109FE2155F253000687AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V38K88SBB6;
-				INFOPLIST_FILE = TSLoanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phatchiem.TSLoanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TSLoan;
-			};
-			name = Debug;
-		};
-		665109FF2155F253000687AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V38K88SBB6;
-				INFOPLIST_FILE = TSLoanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phatchiem.TSLoanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TSLoan;
 			};
 			name = Release;
 		};
@@ -658,15 +769,6 @@
 			buildConfigurations = (
 				665109FB2155F253000687AC /* Debug */,
 				665109FC2155F253000687AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		665109FD2155F253000687AC /* Build configuration list for PBXNativeTarget "TSLoanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				665109FE2155F253000687AC /* Debug */,
-				665109FF2155F253000687AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
