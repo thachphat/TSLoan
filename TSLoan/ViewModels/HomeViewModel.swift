@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  HomeViewModel.swift
 //  TSLoan
 //
 //  Created by Phat Chiem on 9/22/18.
@@ -8,10 +8,6 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
+class HomeViewModel: NSObject {
 
 }
-
