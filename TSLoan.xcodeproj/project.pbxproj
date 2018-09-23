@@ -169,9 +169,9 @@
 		665109E62155F253000687AC /* TSLoanTests */ = {
 			isa = PBXGroup;
 			children = (
-				66510A3C2156E2C3000687AC /* UtilsTest */,
+				66510A3C2156E2C3000687AC /* UtilsTests */,
 				66510A21215611E4000687AC /* ModelsTests */,
-				66510A412156E704000687AC /* ServicesTest */,
+				66510A412156E704000687AC /* ServicesTests */,
 				665109E92155F253000687AC /* Info.plist */,
 			);
 			path = TSLoanTests;
@@ -244,20 +244,20 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		66510A3C2156E2C3000687AC /* UtilsTest */ = {
+		66510A3C2156E2C3000687AC /* UtilsTests */ = {
 			isa = PBXGroup;
 			children = (
 				66510A3D2156E2CC000687AC /* JSONUtilsSpec.swift */,
 			);
-			path = UtilsTest;
+			path = UtilsTests;
 			sourceTree = "<group>";
 		};
-		66510A412156E704000687AC /* ServicesTest */ = {
+		66510A412156E704000687AC /* ServicesTests */ = {
 			isa = PBXGroup;
 			children = (
 				66510A422156E715000687AC /* APIServiceSpec.swift */,
 			);
-			path = ServicesTest;
+			path = ServicesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,17 +456,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TSLoanTests/Pods-TSLoanTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

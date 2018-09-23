@@ -19,11 +19,8 @@ target 'TSLoan' do
     pod 'Quick'
     pod 'Nimble'
     pod 'KIF'
-  end
-
-  target 'TSLoanUITests' do
-    inherit! :search_paths
-    # Pods for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
   end
 
 end
