@@ -1,3 +1,10 @@
+### Running project
+
+1. Install cocoapods using command `gem install cocoapods`
+2. Run `pod install`
+3. Open `TSLoan.xcworkspace` with XCode
+4. Run project using `⌘ + R`
+
 ### Home screen features:
 
 - [ ] Show minimum loan amount
