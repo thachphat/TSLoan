@@ -31,6 +31,11 @@
 		66510A3E2156E2CC000687AC /* JSONUtilsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A3D2156E2CC000687AC /* JSONUtilsSpec.swift */; };
 		66510A402156E37F000687AC /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 66510A3F2156E37F000687AC /* empty.json */; };
 		66510A432156E715000687AC /* APIServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66510A422156E715000687AC /* APIServiceSpec.swift */; };
+		66A87AD32157614300968879 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A87AD22157614300968879 /* ValidationService.swift */; };
+		66A87AD52157D64B00968879 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A87AD42157D64B00968879 /* AlertUtils.swift */; };
+		66A87AD72157D77900968879 /* MonthlyIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A87AD62157D77900968879 /* MonthlyIncome.swift */; };
+		66A87AD92157DEBB00968879 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 66A87AD82157DEBB00968879 /* README.md */; };
+		66A87ADB2157E98200968879 /* ValidationServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A87ADA2157E98200968879 /* ValidationServiceSpec.swift */; };
 		6E99CD6FD6938C4B71AFC9E9 /* Pods_TSLoan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEFC00B09FA69DCA3721D98 /* Pods_TSLoan.framework */; };
 		CD68AB557AA3CCF06E966884 /* Pods_TSLoanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4653DACF4983121D50D438E8 /* Pods_TSLoanTests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +83,11 @@
 		66510A3D2156E2CC000687AC /* JSONUtilsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtilsSpec.swift; sourceTree = "<group>"; };
 		66510A3F2156E37F000687AC /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
 		66510A422156E715000687AC /* APIServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceSpec.swift; sourceTree = "<group>"; };
+		66A87AD22157614300968879 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		66A87AD42157D64B00968879 /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
+		66A87AD62157D77900968879 /* MonthlyIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyIncome.swift; sourceTree = "<group>"; };
+		66A87AD82157DEBB00968879 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		66A87ADA2157E98200968879 /* ValidationServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceSpec.swift; sourceTree = "<group>"; };
 		7BEFC00B09FA69DCA3721D98 /* Pods_TSLoan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSLoan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		930C1FBCD55DC9770FC8DAA3 /* Pods-TSLoan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSLoan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSLoan/Pods-TSLoan.debug.xcconfig"; sourceTree = "<group>"; };
 		BC5FEAFD8B089915B9FB2F52 /* Pods-TSLoanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSLoanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSLoanUITests/Pods-TSLoanUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +141,7 @@
 		665109C62155F252000687AC = {
 			isa = PBXGroup;
 			children = (
+				66A87AD82157DEBB00968879 /* README.md */,
 				665109D12155F252000687AC /* TSLoan */,
 				665109E62155F253000687AC /* TSLoanTests */,
 				665109D02155F252000687AC /* Products */,
@@ -210,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				66510A1C21560082000687AC /* APIService.swift */,
+				66A87AD22157614300968879 /* ValidationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -221,6 +233,7 @@
 				66510A272156477D000687AC /* Offer.swift */,
 				66510A292156478B000687AC /* Bank.swift */,
 				66510A2B215648BD000687AC /* ProvinceList.swift */,
+				66A87AD62157D77900968879 /* MonthlyIncome.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				66510A342156DDD9000687AC /* JSONUtils.swift */,
+				66A87AD42157D64B00968879 /* AlertUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -256,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				66510A422156E715000687AC /* APIServiceSpec.swift */,
+				66A87ADA2157E98200968879 /* ValidationServiceSpec.swift */,
 			);
 			path = ServicesTests;
 			sourceTree = "<group>";
@@ -351,6 +366,7 @@
 				665109D82155F252000687AC /* Main.storyboard in Resources */,
 				66510A302156DC9D000687AC /* provinces.json in Resources */,
 				66510A312156DC9D000687AC /* offer.json in Resources */,
+				66A87AD92157DEBB00968879 /* README.md in Resources */,
 				66510A322156DC9D000687AC /* loans.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,12 +504,15 @@
 			files = (
 				66510A282156477D000687AC /* Offer.swift in Sources */,
 				66510A112155F91F000687AC /* RegisterLoanViewController.swift in Sources */,
+				66A87AD32157614300968879 /* ValidationService.swift in Sources */,
 				66510A352156DDD9000687AC /* JSONUtils.swift in Sources */,
 				66510A172155F93D000687AC /* RegisterLoanViewModel.swift in Sources */,
 				665109D32155F252000687AC /* AppDelegate.swift in Sources */,
 				66510A202156013B000687AC /* Loan.swift in Sources */,
 				66510A2C215648BD000687AC /* ProvinceList.swift in Sources */,
+				66A87AD52157D64B00968879 /* AlertUtils.swift in Sources */,
 				66510A122155F91F000687AC /* HomeViewController.swift in Sources */,
+				66A87AD72157D77900968879 /* MonthlyIncome.swift in Sources */,
 				66510A2A2156478B000687AC /* Bank.swift in Sources */,
 				66510A1D21560082000687AC /* APIService.swift in Sources */,
 				66510A152155F935000687AC /* HomeViewModel.swift in Sources */,
@@ -510,6 +529,7 @@
 				66510A372156E0D5000687AC /* OfferSpec.swift in Sources */,
 				66510A3E2156E2CC000687AC /* JSONUtilsSpec.swift in Sources */,
 				66510A23215611F5000687AC /* LoanSpec.swift in Sources */,
+				66A87ADB2157E98200968879 /* ValidationServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
