@@ -9,6 +9,7 @@
 import UIKit
 import DropDown
 import RxSwift
+import RxCocoa
 
 class RegisterLoanViewController: UIViewController {
     
@@ -20,11 +21,12 @@ class RegisterLoanViewController: UIViewController {
     @IBOutlet private var submitButton: UIButton!
     
     private let disposeBag = DisposeBag()
-    private let viewModel = RegisterLoanViewModel()
     
     // MARK: - Dropdown
     private let provinceDropDown = DropDown()
+    private let provinceSubject = PublishSubject<String>()
     private let monthlyIncomeDropDown = DropDown()
+    private let monthlyIncomeSubject = PublishSubject<Int>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,16 +43,10 @@ class RegisterLoanViewController: UIViewController {
     private func setUpProvinceDropDown() {
         provinceDropDown.anchorView = selectProvinceButton
         provinceDropDown.bottomOffset = CGPoint(x: 0, y: selectProvinceButton.bounds.height)
-        provinceDropDown.dataSource = [
-            "iPhone SE | Black | 64G",
-            "Samsung S7",
-            "Huawei P8 Lite Smartphone 4G",
-            "Asus Zenfone Max 4G",
-            "Apple Watwh | Sport Edition"
-        ]
         
         provinceDropDown.selectionAction = { [weak self] (index, item) in
             self?.selectProvinceButton.setTitle(item, for: .normal)
+            self?.provinceSubject.on(.next(item))
         }
         
         selectProvinceButton.rx.tap
@@ -64,16 +60,11 @@ class RegisterLoanViewController: UIViewController {
     private func setUpMonthlyIncomeDropDown() {
         monthlyIncomeDropDown.anchorView = selectMonthlyIncomeButton
         monthlyIncomeDropDown.bottomOffset = CGPoint(x: 0, y: selectMonthlyIncomeButton.bounds.height)
-        monthlyIncomeDropDown.dataSource = [
-            "iPhone SE | Black | 64G",
-            "Samsung S7",
-            "Huawei P8 Lite Smartphone 4G",
-            "Asus Zenfone Max 4G",
-            "Apple Watwh | Sport Edition"
-        ]
+        monthlyIncomeDropDown.dataSource = MonthlyIncome.allTypeOfIncomes().map({ $0.description() })
         
         monthlyIncomeDropDown.selectionAction = { [weak self] (index, item) in
             self?.selectMonthlyIncomeButton.setTitle(item, for: .normal)
+            self?.monthlyIncomeSubject.on(.next(MonthlyIncome.allTypeOfIncomes()[index].rawValue))
         }
         
         selectMonthlyIncomeButton.rx.tap
@@ -85,9 +76,48 @@ class RegisterLoanViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        // TODO: validate fields
-        // TODO: bind field to view model
-        // TODO: bind submit button
+        let viewModel = RegisterLoanViewModel(
+            input: (
+                phoneNumber: phoneNumberTextField.rx.text.orEmpty.asDriver(),
+                fullName: fullNameTextField.rx.text.orEmpty.asDriver(),
+                nationalIDNumber: nationalIdNumberTextField.rx.text.orEmpty.asDriver(),
+                province: provinceSubject.asDriver(onErrorJustReturn: ""),
+                monthlyIncome: monthlyIncomeSubject.asDriver(onErrorJustReturn: 1),
+                submitTaps: submitButton.rx.tap.asSignal()
+            ),
+            dependency: (
+                provider: apiServiceProvider,
+                validationService: TSLoanValidationService()
+            )
+        )
+        
+        viewModel.validatedPhoneNumber.drive(onNext: { [weak self] (isValidated) in
+            self?.phoneNumberTextField.layer.borderColor = isValidated ? UIColor.green.cgColor : UIColor.red.cgColor
+            self?.phoneNumberTextField.layer.borderWidth = 1
+        }).disposed(by: disposeBag)
+        
+        viewModel.validatedFullName.drive(onNext: { [weak self] (isValidated) in
+            self?.fullNameTextField.layer.borderColor = isValidated ? UIColor.green.cgColor : UIColor.red.cgColor
+            self?.fullNameTextField.layer.borderWidth = 1
+        }).disposed(by: disposeBag)
+        
+        viewModel.validatedNationalIDNumber.drive(onNext: { [weak self] (isValidated) in
+            self?.nationalIdNumberTextField.layer.borderColor = isValidated ? UIColor.green.cgColor : UIColor.red.cgColor
+            self?.nationalIdNumberTextField.layer.borderWidth = 1
+        }).disposed(by: disposeBag)
+        
+        viewModel.provinces.drive(onNext: { [weak self] (provinces) in
+            self?.provinceDropDown.dataSource = provinces
+        }).disposed(by: disposeBag)
+        
+        viewModel.registered.drive(onNext: { [weak self] (result) in
+            switch result {
+            case .success(let loan):
+                AlertUtils.showPromptMessage(loan.toJSONString() ?? "cannot register loan", from: self)
+            case .failure(let error):
+                AlertUtils.showPromptMessage(error.localizedDescription, from: self)
+            }
+        }).disposed(by: disposeBag)
     }
     
 }

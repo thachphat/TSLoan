@@ -7,19 +7,19 @@
 
 ### Home screen features:
 
-- [ ] Show minimum loan amount
-- [ ] Show maximum loan amount
-- [ ] Show minimum tenor
-- [ ] Show maximum tenor
-- [ ] Show interest rate
-- [ ] Show bank's information
-- [ ] Register loan button
+- [x] Show minimum loan amount
+- [x] Show maximum loan amount
+- [x] Show minimum tenor
+- [x] Show maximum tenor
+- [x] Show interest rate
+- [x] Show bank's information
+- [x] Go to register loan screen
 
 ### Register loan screen features:
 
-- [ ] Input phone number (includes validating)
-- [ ] Input full name
-- [ ] Input national ID number
-- [ ] Input province
-- [ ] Select monthly income
-- [ ] Submit registration information
+- [x] Input phone number (includes validating)
+- [x] Input full name
+- [x] Input national ID number
+- [x] Input province
+- [x] Select monthly income
+- [x] Submit registration information
