@@ -199,9 +199,59 @@
                     <view key="view" contentMode="scaleToFill" id="slJ-s0-HTR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sWa-0b-1Kl">
+                                <rect key="frame" x="8" y="223.5" width="359" height="220"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yVd-zz-3h3">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dl3-ip-3Vd">
+                                        <rect key="frame" x="0.0" y="38" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="National ID Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-lM-a4N">
+                                        <rect key="frame" x="0.0" y="76" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2s-5j-4Bv">
+                                        <rect key="frame" x="0.0" y="114" width="359" height="30"/>
+                                        <state key="normal" title="Province"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpa-JL-NHZ">
+                                        <rect key="frame" x="0.0" y="152" width="359" height="30"/>
+                                        <state key="normal" title="Monthly Income"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjy-Mn-aBP">
+                                        <rect key="frame" x="0.0" y="190" width="359" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sWa-0b-1Kl" firstAttribute="centerX" secondItem="slJ-s0-HTR" secondAttribute="centerX" id="Au6-Qf-KCT"/>
+                            <constraint firstItem="sWa-0b-1Kl" firstAttribute="leading" secondItem="hIx-Zn-SFD" secondAttribute="leading" constant="8" id="TPK-3A-vhP"/>
+                            <constraint firstItem="sWa-0b-1Kl" firstAttribute="centerY" secondItem="slJ-s0-HTR" secondAttribute="centerY" id="feu-b9-EPX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hIx-Zn-SFD"/>
                     </view>
+                    <connections>
+                        <outlet property="fullNameTextField" destination="Dl3-ip-3Vd" id="hCZ-NN-I1C"/>
+                        <outlet property="nationalIdNumberTextField" destination="Dfu-lM-a4N" id="fuH-DW-TV9"/>
+                        <outlet property="phoneNumberTextField" destination="yVd-zz-3h3" id="bKr-e6-XNF"/>
+                        <outlet property="selectMonthlyIncomeButton" destination="Kpa-JL-NHZ" id="bGY-lr-KhM"/>
+                        <outlet property="selectProvinceButton" destination="O2s-5j-4Bv" id="DCv-du-5cY"/>
+                        <outlet property="submitButton" destination="jjy-Mn-aBP" id="BXv-4k-kCu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6n5-t3-0K0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
