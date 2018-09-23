@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lh-qe-UyW">
-                                <rect key="frame" x="140.5" y="479.5" width="94" height="30"/>
+                                <rect key="frame" x="140.5" y="489.5" width="94" height="30"/>
                                 <state key="normal" title="Register Loan"/>
                                 <connections>
                                     <segue destination="Qhc-hb-bjK" kind="show" id="kt6-Z3-at5"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Kgw-um-a4w">
-                                <rect key="frame" x="10" y="208" width="355" height="251.5"/>
+                                <rect key="frame" x="10" y="198" width="355" height="271.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan amounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEJ-Xz-hkC">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
@@ -136,7 +136,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="b3E-ky-scs">
-                                        <rect key="frame" x="0.0" y="198" width="355" height="53.5"/>
+                                        <rect key="frame" x="0.0" y="198" width="355" height="73.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banking information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zx-6Y-d0N">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
@@ -145,17 +145,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DP3-TJ-Fdl">
-                                                <rect key="frame" x="0.0" y="23.5" width="355" height="30"/>
+                                                <rect key="frame" x="0.0" y="23.5" width="355" height="50"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hmE-Cr-PxQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="30" id="Icu-uA-oIp"/>
+                                                            <constraint firstAttribute="width" constant="50" id="Icu-uA-oIp"/>
                                                             <constraint firstAttribute="width" secondItem="hmE-Cr-PxQ" secondAttribute="height" multiplier="1:1" id="xpQ-0U-nxi"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQa-kA-qb9">
-                                                        <rect key="frame" x="35" y="0.0" width="320" height="30"/>
+                                                        <rect key="frame" x="55" y="0.0" width="300" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
